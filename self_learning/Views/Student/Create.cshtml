@@ -1,0 +1,46 @@
+﻿@model StudentCourseRegistration.Models.Student
+
+<h2>Student Registration Form</h2>
+
+<form asp-action="Create" method="post">
+
+    <div asp-validation-summary="All"></div>
+
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+        <span asp-validation-for="Name"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label asp-for="Email"></label>
+        <input asp-for="Email" />
+        <span asp-validation-for="Email"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label asp-for="Course"></label>
+        <input asp-for="Course" />
+        <span asp-validation-for="Course"></span>
+    </div>
+
+    <br />
+
+    <div>
+        <label asp-for="Semester"></label>
+        <input asp-for="Semester"
+               type="number"
+               min="1"
+               max="8" />
+        <span asp-validation-for="Semester"></span>
+    </div>
+
+    <br />
+
+    <button type="submit">Register Student</button>
+
+</form>

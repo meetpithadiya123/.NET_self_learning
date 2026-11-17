@@ -1,0 +1,23 @@
+﻿# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.cache
+
+# VS Code
+.vscode/
+
+# Test results
+TestResults/
+
+# Publish folders
+publish/
+artifacts/
+
+# Temporary files
+*.log
+*.tmp
